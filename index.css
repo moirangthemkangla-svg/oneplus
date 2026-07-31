@@ -66,10 +66,10 @@ body {
 @media (max-width: 768px) {
   .main img {
     width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 5%;
+
+    transform: translatey(-50%);
     top: 25%; /* was 10% */
-    height: auto;
   }
 }
 .new {
