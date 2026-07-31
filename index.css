@@ -10,27 +10,6 @@ body {
 }
 
 /* Mobile Devices */
-
-@media (min-width: 300px) and (max-width: 768px) {
-  .nav-icons {
-    left: 10%;
-  }
-
-  .nav-links {
-    gap: 10px;
-  }
-
-  .nav-links a {
-    font-size: 14px;
-  }
-
-  .main img {
-    height: 400px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
 .navbar {
   backdrop-filter: blur(15px);
   background: rgb(255, 255, 255, 0.2);
@@ -53,19 +32,7 @@ body {
     height: 50px;
   }
 }
-.nav-icons {
-  position: relative;
-}
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 70px;
-}
-.nav-links a {
-  text-decoration: none;
-  font-size: 16px;
-  color: black;
-}
+
 .logo {
   position: relative;
   display: flex;
@@ -83,7 +50,7 @@ body {
   }
 }
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   position: relative;
 }
@@ -91,20 +58,21 @@ body {
   z-index: 1;
   position: absolute;
   width: 1061px;
-  height: 700px;
+  max-width: 100%;
+  height: auto;
   top: 10%;
   left: 16%;
 }
-@media (min-width: 300px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .main img {
     width: 100%;
-    left: 54%;
-    top: 10%;
-    height: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%; /* was 10% */
+    height: auto;
   }
 }
 .new {
-  background-color: antiquewhite;
   height: 100vh;
   overflow: hidden;
   position: relative;
