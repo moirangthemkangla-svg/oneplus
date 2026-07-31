@@ -131,10 +131,10 @@ body {
 }
 .button {
   z-index: 2;
-  position: relative;
+  position: absolute;
   width: 200px;
   height: 200px;
-  top: 56%;
+  top: 58%;
   left: 5%;
   transition: 0.3s ease-in-out;
 }
